@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<style>
+table, th, td {
+border: 1px solid black;
+border-collapse: collapse;
+}
+
+td{
+padding:10px;
+}
+
+table{
+margin-left: auto;
+margin-right: auto;
+
+}
+
+th{
+  background-color: lightgrey;
+  padding:1%;
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    display: inline-block;
+  }
+  
+textarea {
+resize: none; 
+width: 90%;
+height: 90%; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  .left, .right {
+    width: 20%; 
+  }
+  .center {
+    width: 40%; 
+    text-align: center;
+  }
+  .center img {
+    max-width: 70%;
+    height: auto;
+  }
+  
+ h1, h2{
+  text-align: center;
+  }
+
+.left{
+padding-right:40px;
+}
+
+.h{
+text-align: center;
+background-color: #f2f2f2; 
+border: 1px solid #000;
+width: 150px;
+height: 200px;
+}
+
+ .file-input {
+    display: none; 
+  }
+
+  .file-input-label {
+    display: inline-block;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #dcdcdc;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .file-input-label:hover {
+    background-color: #e2e2e2;
+  }
+  
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="left">
+<h2>
+دولة فلسطين
+<br>
+الجهاز المركزي للاحصاء الفلسطيني
+<br>
+التعداد العام للسكان و المساكن 
+<br>
+و المنشات -2017
+</h2>
+  </div>
+  <div class="center">
+    <img src="418200655_933693575070974_7784081482888914033_n.jpg" alt="2024">
+  </div>
+  <div class="right">
+   <div>
+    <h2 class="h">
+صورة ملونة 
+<br>
+عدد 2
+<br>
+</h2>
+    </div>
+   <label for="file-input" class="file-input-label">Upload Photo</label>
+    <input type="file" id="file-input" class="file-input"  accept="image/*">
+  </div>
+</header>
+
+<table style="width:90%">
+
+  <tr>
+    <th colspan="3">
+    نموذج سيرة ذاتية و طلب توظيف (وظيفة مؤقتة)
+    </th>
+  </tr>
+  
+  <tr>
+    <td colspan="3">
+    <label for="n">
+    رقم الطلب:
+    </label>
+    <input type="number" id="n" >
+    
+    <label for="birthday">
+    تاريخ تقديم الطلب:
+    </label>
+  <input type="date" id="birthday" name="birthday"> 
+    
+    <label for="fname">
+   مكتب تعداد المحافظة:
+    </label>
+  <input type="text" id="fname" name="fname">
+   
+    <br>
+    الوظيفة المطلوبة: 
+    <form>
+  <input type="checkbox" id="1">
+  <label for="1">وظائف ميدانية</label>
+  <input type="checkbox" id="2" >
+  <label for="2">مدقق مالي/اداري</label>
+  <input type="checkbox" id="3" name="vehicle3" value="Boat">
+  <label for="3">سكرتير/ة</label>
+  <input type="checkbox" id="4" >
+  <label for="4">سائق</label>
+  <br>
+  <input type="checkbox" id="5">
+  <label for="5">موظف دعم فني</label>
+  <input type="checkbox" id="6" >
+  <label for="6">مساعد اداري</label>
+  <input type="checkbox" id="7">
+  <label for="7">منسق اعلامي</label>
+  <input type="checkbox" id="8" >
+  <label for="8">مراسل</label>
+</form> 
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+    <label for="fname">
+    الاسم الرباعي:
+    </label>
+  <input type="text" id="fname" name="fname"><br>
+    </td>
+    <td> 
+    رقم الهوية 
+    <div class="square"><textarea></textarea> </div>
+    <div class="square"><textarea></textarea> </div>
+    <div class="square"><textarea></textarea> </div>
+    <div class="square"><textarea></textarea> </div>
+    <div class="square"><textarea></textarea> </div>
+    <div class="square"><textarea></textarea> </div>
+    <div class="square"><textarea></textarea> </div>
+    <div class="square"><textarea></textarea> </div>
+    <div class="square"><textarea></textarea> </div>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+    <label for="birthday">
+    تاريخ الولادة:
+    </label>
+  <input type="date" id="birthday" name="birthday"> 
+ <label for="fname">
+    مكانها:
+    </label>
+  <input type="text" id="fname" name="fname"><br>
+
+    </td>
+    
+    <td>
+    الجنس: 
+    <input type="radio" id="m" value="m" name="s">
+  <label for="m">ذكر</label>
+  <input type="radio" id="f" value="f" name="s">
+  <label for="f">انثى</label>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+    الحالة الاجتماعية :
+    <select>
+    <option >
+    اعزب
+    </option>
+    <option >
+    متزوج
+    </option>
+    <option >
+    ارمل 
+    </option>
+    <option >
+    مطلق
+    </option>
+  </select>
+    </td>
+    
+    <td>
+    عدد الاولاد: 
+    <input type="number" min="0" max="20">
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+    <label for="fname">
+    المؤهل العلمي: 
+    </label>
+   <select>
+    <option > ماجستير</option>
+    <option > توجيهي </option>
+    <option > كلية </option>
+    <option > جامعة </option>
+    <option >دبلوم </option>
+    <option > بكالوريوس</option>
+    <option >دكتوراه</option>
+  </select>
+    <br>
+    <br>
+
+    <label for="fname">
+    التخصص:
+    </label>
+  <input type="text" id="fname" name="fname"><br>
+    <br>
+    <label for="fname">
+    سنة التخرج:
+    </label>
+  <input type="month" id="aymonth">
+  <label for="fname">
+   بلد التخرج:
+    </label>
+  <input type="text" id="fname" name="fname"><br>
+  
+    </td>
+    
+    <td>
+   
+    <label for="fname">
+     مكان السكن الحالي: 
+    </label>
+  <input type="text" id="fname" name="fname"><br>
+    <br>
+    <label for="phone">
+   رقم الهاتف:
+    </label>
+    <input type="tel" id="phone" name="phone" placeholder="123-45-678" required>
+    
+    <label for="phone">
+   رقم الخلوي:
+    </label>
+    <input type="tel" id="phone" name="phone" placeholder="123-45-678" required>
+   <br>
+   <br>
+   <label for="fname">
+   عنوان الطوارئ:
+    </label>
+  <input type="text" id="fname" name="fname"><br>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+    <label for="year">
+  عدد سنوات الخبرة في مجال التخصص:
+  </label>
+  <input type="number" id="year"  min="0" max="100" >
+    </td>
+    <td>
+    مكان العمل السابق (اسم البلد/المؤسسة) 
+    <textarea></textarea>
+    
+    </td>
+  </tr>
+  
+   <tr>
+    <td colspan="3">
+    استخدام الحاسوب: 
+    <input type="radio" id="l" name="v">
+  <label for="l">جيد جدا</label>
+  <input type="radio" id="m" name="v" >
+  <label for="m">جيد</label>
+   <input type="radio" id="n" name="v">
+  <label for="n">مقبول</label>
+  <input type="radio" id="o" name="v" >
+  <label for="o">ضعيف</label>
+    </td>
+  </tr>
+  
+  <tr>
+    <td colspan="3">
+    اللغات(قراءة و كتابة و محادثة)
+    <input type="checkbox" id="ar">
+    <label for="ar">عربي</label>
+    <input type="checkbox" id="en">
+    <label for="en">انجليزي</label>
+    <input type="checkbox" id="fr">
+    <label for="fr">فرنسي</label>
+    <input type="checkbox" id="is">
+    <label for="is">عبري</label>
+    <input type="checkbox" id="else">
+    <label for="else">اخرى</label>
+    </td>
+  </tr>
+  
+  <tr>
+    <td colspan="3">
+    مهارات اخرى ترغب بذكرها :
+    <textarea></textarea>
+    </td>
+  </tr>
+  
+  <tr>
+    <td colspan="3">
+    اشهد و اقر بان هذه البيانات صحيحة و ارغب بالعمل لديكم بوظيفة 
+     <input type="text" id="fname" name="fname">
+    حسب نظام الخدمة المعمول به لديكم.
+    <br>
+   <br>
+    التوقيع:
+    <input type="file" id="ph">
+    <label for="birthday">
+    التاريخ:  
+    </label>
+  <input type="date" id="birthday" name="birthday"> 
+    <br>
+    <br>
+    ملاحظة : مرفق صورة عم المؤهلات العلمية و صورتين شخصيتين + صورة عن الهوية الشخصية
+    </td>
+  </tr>
+  
+  <tr>
+    <th colspan="3">
+    خاص بالموارد البشرية
+    </th>
+  </tr>
+  
+  <tr>
+    <td colspan="3">
+    <input type="checkbox">
+    غيرمطابق للمواصفات المطلوبة للوظيفة 
+    </td>
+  </tr>
+  
+  <tr>
+    <td colspan="3">
+    <input type="checkbox">
+     تمت الموافقة على التعيين بوظيفة 
+     <input type="text" id="fname" name="fname">
+     على ان يبدا العمل في التعداد بتاريخ :  
+     <input type="date" id="birthday" name="birthday"> 
+     حتى:
+     <input type="date" id="birthday" name="birthday"> 
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+   مكان العمل في التعداد :
+   <textarea></textarea>
+    </td>
+    
+    <td>
+    الرقم الوظيفي: 
+    <div class="square"><textarea></textarea> </div>
+    <div class="square"><textarea></textarea> </div>
+    <div class="square"><textarea></textarea> </div>
+    <div class="square"><textarea></textarea> </div>
+    <div class="square"><textarea></textarea> </div>
+    <div class="square"><textarea></textarea> </div>
+    </td>
+  </tr>
+  
+  <tr>
+  <td colspan="3">
+  اسم البنك:
+   <input type="text" id="fname" name="fname">
+  الفرع:
+   <input type="text" id="fname" name="fname">
+ رقم الحساب:
+ <input type="text" id="fname" name="fname">
+  
+  </td>
+  </tr>
+  
+  <tr>
+  <td colspan="3">
+  مدير دائرة الموارد البشرية :
+  <input type="file" id="ph">
+  يعتمد: 
+  <input type="file" id="ph">
+  </td>
+  </tr>
+  
+</table>
+<br>
+<br>
+<br>
+</body>
+</html>
+
